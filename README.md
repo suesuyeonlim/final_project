@@ -75,7 +75,7 @@ Name: assembly, dtype: object
 
 ## V. Location of Data/Analysis
 - Data: See "Data" folder.
-- Analysis: There are two Jupyter notebooks, "01 Data Preparation.ipnyb" and "02 Main Analyses.ipynb". Unless you are interested in the data processing step, you can directly go to "02 Main Analyses.ipynb". Alternatively, you can also play around with the file (here)[https://drive.google.com/file/d/1GXH57NHi1oM4hMAOsGKkajTKnjZnWH41/view?usp=drive_link].
+- Analysis: There are two Jupyter notebooks, "01 Data Preparation.ipnyb" and "02 Main Analyses.ipynb". Unless you are interested in the data processing step, you can directly go to "02 Main Analyses.ipynb". Alternatively, you can also play around with the file [here](https://drive.google.com/file/d/1GXH57NHi1oM4hMAOsGKkajTKnjZnWH41/view?usp=drive_link).
   - "01 Data Preparation.ipynb"
     - This notebook cleans and subsets raw data which are used in the main analyses. In order to run this notebook, unzip the folder "Raw Data.zip" in the "Data" folder, and you need to download three datasets - (reviews for Pet Supplies)[https://datarepo.eng.ucsd.edu/mcauley_group/data/amazon_v2/categoryFiles/Pet_Supplies.json.gz], (product information data)[https://datarepo.eng.ucsd.edu/mcauley_group/data/amazon_v2/metaFiles2/meta_Pet_Supplies.json.gz], and (Shoes images data)[https://amazon-berkeley-objects.s3.amazonaws.com/archives/abo-images-small.tar].
   - "02 Main Analyses.ipynb"
