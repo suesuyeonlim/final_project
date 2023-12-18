@@ -7,6 +7,8 @@ In this project, I aim to show how to build recommendation engine for products, 
 - <ins>Product Search Enhancement:</ins> I show how product search can be enhanced by identifying similar groups of products by using sellers' product keywords through multi-label classifcation neural networks.
 - <ins>Featured Product Reviews:</ins> I extracted featured review sentences that capture common themes of reviews for a product through Term Frequency - Inverse Document Frequency ("TF-IDF").
 
+For reference, you can find and play around with the code in Google Colab: https://drive.google.com/file/d/1GXH57NHi1oM4hMAOsGKkajTKnjZnWH41/view?usp=drive_link.
+
 ## II. Product Recommendation
 In order to build recommendation engine using model-based approaches, I use [Amazon Product Reviews from UCSD](https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews) for years 2001-2018. As seen below, most reviews are concentrated in the 2013-2018 period and the average rating is approximately 4 stars.
 
