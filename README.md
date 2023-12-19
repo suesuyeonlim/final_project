@@ -1,5 +1,5 @@
 # Amazon Product Recommendation, Search, and Reviews
-![image](https://github.com/suesuyeonlim/final_project/assets/19903898/8ec8c7ec-139e-454d-ad7a-e08bae6a81a0)
+<img width="687" alt="image" src="https://github.com/suesuyeonlim/final_project/assets/19903898/da46889a-4f50-48c1-8572-da45b81cae3d">
 
 ## I. Project Overview
 In this project, I aim to show how to build recommendation engine for products, enhance search experience, and capture essence of product reviews that would be useful to customers. Specifically,
@@ -14,11 +14,11 @@ In order to build recommendation engine using model-based approaches, I use [Ama
 
 > Number of Reviews
 
-![image](https://github.com/suesuyeonlim/final_project/assets/19903898/98dee324-3a34-46d5-b2cf-305e7369fc4f)
+![image](https://github.com/suesuyeonlim/final_project/assets/19903898/347aa238-a020-43ed-9688-96fa32737498)
 
 > Average Review Ratings
 
-![image](https://github.com/suesuyeonlim/final_project/assets/19903898/692d6188-c241-4c59-a2c7-23fc4ae72017)
+![image](https://github.com/suesuyeonlim/final_project/assets/19903898/797d4c0c-94b4-4c63-be19-f568abf3ab14)
 
 Based on the data, I employ model-based approaches. Broadly speaking, model-based approaches derive an item embedding matrix which contains item deciding factors (e.g., how convenient is an item to use?) and a user embedding matrix which contains sensitivities to such item factors. I use three methods - SVD, ALS, and Neural Networks - and find that SVD and ALS perform better than Neural Networks. These methodologies are summarized below:
 
@@ -27,21 +27,19 @@ Based on the data, I employ model-based approaches. Broadly speaking, model-base
 - Neural Networks: Dot products of the user embedding matrix and the item embedding matrix feed into the model and optimized.
 
 I would like to demonstrate an example using ALS. The following is an actual purchase list of a customer and the ratings the person left:
-<img width="890" alt="image" src="https://github.com/suesuyeonlim/final_project/assets/19903898/17fe1b29-9e0f-4b41-8a07-52b6c9ff8f1f">
+<img width="628" alt="image" src="https://github.com/suesuyeonlim/final_project/assets/19903898/b15f8371-62c9-4977-b713-96b8b5c5c895">
 
 Top 10 products recommended for this customer are the following:
-![image](https://github.com/suesuyeonlim/final_project/assets/19903898/3ebc1270-cb7e-4d78-b746-8c570306dbe3)
+<img width="734" alt="image" src="https://github.com/suesuyeonlim/final_project/assets/19903898/d7e9ee6d-e079-43e6-a0ec-c28b3b3a6652">
 
 ## III. Product Search Enhancement
 For this task, I use [Amazon Berkeley Objects ("ABO") data](https://amazon-berkeley-objects.s3.amazonaws.com/index.html). I take advantage of the product keywords sellers post along with their products, and use them target labels that a neural network should predict based on product images. As a product can have more than one keyword, I use multi-label classification. I train the data to predict target labels, and the training and test accuracies amount to 99% and 93% respectively.
 
-I would like to demonstrate an example of "formal shoes". There are four labels which contain the keyword "formal": "formal shoes for men black", "formal shoes for mens leather", "leather shoes for men formal branded", and "shoes for men formal". Below are 5 example shows with one of the aforementioned labels.
+I would like to demonstrate an example of "formal shoes". There are four labels which contain the keyword "formal": "formal shoes for men black", "formal shoes for mens leather", "leather shoes for men formal branded", and "shoes for men formal". Below are 3 examples with one of the aforementioned labels.
 
-![image](https://github.com/suesuyeonlim/final_project/assets/19903898/2efadae0-ba3a-452d-9c6d-b5f92bcfe627)
-![image](https://github.com/suesuyeonlim/final_project/assets/19903898/f604f2ff-43e4-451b-92d4-0a4efc9d1502)
-![image](https://github.com/suesuyeonlim/final_project/assets/19903898/d99db19d-cda8-4bf2-90d5-2769bd470ac5)
-![image](https://github.com/suesuyeonlim/final_project/assets/19903898/fff05aff-b671-4248-a332-b787838a8eed)
-![image](https://github.com/suesuyeonlim/final_project/assets/19903898/cd191756-b57f-4868-9c2a-56690ac01e38)
+![image](https://github.com/suesuyeonlim/final_project/assets/19903898/2554f9f2-cd33-4d4e-9b5e-9730f2579355)
+![image](https://github.com/suesuyeonlim/final_project/assets/19903898/69d6834f-103c-4636-9a64-8ae44f4bcf83)
+![image](https://github.com/suesuyeonlim/final_project/assets/19903898/1b5a00bb-2075-4f8b-9639-59ab48484227)
 
 ## IV. Featured Product Reviews
 ![image](https://github.com/suesuyeonlim/final_project/assets/19903898/ca6ebb6c-712d-488d-8428-9b34a956c68a)
