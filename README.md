@@ -27,9 +27,11 @@ Based on the data, I employ model-based approaches. Broadly speaking, model-base
 - Neural Networks: Dot products of the user embedding matrix and the item embedding matrix feed into the model and optimized.
 
 I would like to demonstrate an example using ALS. The following is an actual purchase list of a customer and the ratings the person left:
+
 <img width="628" alt="image" src="https://github.com/suesuyeonlim/final_project/assets/19903898/b15f8371-62c9-4977-b713-96b8b5c5c895">
 
 Top 10 products recommended for this customer are the following:
+
 <img width="734" alt="image" src="https://github.com/suesuyeonlim/final_project/assets/19903898/d7e9ee6d-e079-43e6-a0ec-c28b3b3a6652">
 
 ## III. Product Search Enhancement
@@ -42,7 +44,7 @@ I would like to demonstrate an example of "formal shoes". There are four labels 
 ![image](https://github.com/suesuyeonlim/final_project/assets/19903898/1b5a00bb-2075-4f8b-9639-59ab48484227)
 
 ## IV. Featured Product Reviews
-![image](https://github.com/suesuyeonlim/final_project/assets/19903898/ca6ebb6c-712d-488d-8428-9b34a956c68a)
+![image](https://github.com/suesuyeonlim/final_project/assets/19903898/45f2ddb0-4b89-49d2-8c44-f27a442bd6ce)
 
 In order to build an NLP model, I again use [Amazon Product Reviews from UCSD](https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews). 
 - I first derive most popular positive keywords from reviews of a product by employing TF-IDF on the positive reviews vs a negative word corpus. I do this to extract negative keywords as well.
