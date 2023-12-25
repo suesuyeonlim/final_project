@@ -32,7 +32,7 @@ I would like to demonstrate an example using ALS. The following is an actual pur
 
 Top 10 products recommended for this customer are the following:
 
-<img width="734" alt="image" src="https://github.com/suesuyeonlim/final_project/assets/19903898/d7e9ee6d-e079-43e6-a0ec-c28b3b3a6652">
+<img width="830" alt="image" src="https://github.com/suesuyeonlim/final_project/assets/19903898/bee6240d-e067-40ae-869c-aaf658d8304f">
 
 ## III. Product Search Enhancement
 For this task, I use [Amazon Berkeley Objects ("ABO") data](https://amazon-berkeley-objects.s3.amazonaws.com/index.html). I take advantage of the product keywords sellers post along with their products, and use them target labels that a neural network should predict based on product images. As a product can have more than one keyword, I use multi-label classification. I train the data to predict target labels, and the training and test accuracies amount to 99% and 93% respectively.
@@ -50,30 +50,29 @@ In order to build an NLP model, I again use [Amazon Product Reviews from UCSD](h
 - I first derive most popular positive keywords from reviews of a product by employing TF-IDF on the positive reviews vs a negative word corpus. I do this to extract negative keywords as well.
 - Then, I identify specific sentences containing those keywords from the reviews that are most popular based on the number of votes.
 
-I would like to demonstrate an example "LitterMaid LM500 Automated Litter Box". For this cat litter box, the following are the top 5 positive review sentences:
+I would like to demonstrate an example "Nylabone Dura Chew Textured Dog Chew, X-Large". For this dog chew, the following are the top 5 positive review sentences:
 
-> with 4 cats, i clean the entire unit about once every two weeks.
+>“( 2560+ lbs)\nIt's really cute to walk along the aisle and see contented dogs happily holding their chew bones in their paws and gnawing away.”
 
-> after years of digging and scratching around in litter\nboxes myself, it's a joy to own something that brings the process into the 21st Century.
+>“I am so glad I got it and I suspect they are even happier!”
 
-> i use a lot less litter, and spend almost no time dealing with the waste itself.
+>“My 60 pound boxer pit mix is a fan.”
 
-> (I have my unit in a carpet covered wood box because I have a dog who likes litter boxes...especially when there's a cat in it, and I keep a plastic runner at the opening of the box...it works great and I just vaccuum or sweep the runner when nec.)
+>“Yummy & Healthy & Fun ...”
 
-> I originally bought this product to help elevate this issue but it has proven to be a blessing from the litter box gods.
+>“Wears slowly.”
 
 Below are the top 5 negative review sentences:
 
-> Therefore in conclusion, I do hope the next unit will be great since the cat seems to like it when it is "On Duty" and working, but when she is on Strike, it burns us all up and our pocketbooks from mailing them all the parts back they require and now burning our tempers that they now want to charge shipping fees for their "FREE" warranties that mean nothing really when they will only give u a problem when u point out there is no charges except the word "Free" regarding their Warranty and replacements on the Warranty information provided with the unit and on their site.
+>“Like I handed her a brick.”
 
-> But the list of shortcomings is a long one, the most endearing of which was flinging urineladen clods of litter against the wall.
+>“I was told that if we got her something like this, she would not tear up anything, like my Bible, anymore.”
 
-> We used 3 types of premium clumping litter, yet end up cleaning the pan by hand frequently each day.
+>“Price is very high than local store, you may able to buy it from Marshall or other local store with better price, and my dog evening blooding after play a while with this product, after one time use, I just through it away.”
 
-> Second, less than 2 months again this time the unit starts having a huge crack from the outside of the motor assembly and along the outside of the unit all down the side of the connection where the ac dc unit is plugged in.
-Name: assembly, dtype: object 
+>“so this is a big fat nope is our book of chew toys.”
 
-> Finally, the little box at the end that is supposed to receive the litter is undersized for a multiple cat household, and are expen$ive to buy, so we started emptying the box and reusing it.
+>“I bought this when I had 4 dogs in the house (our two, and two puppies we were fostering), out of 4 dogs NONE of them wanted this!”
 
 ## V. Location of Data/Analysis
 - Data: See "Data" folder.
