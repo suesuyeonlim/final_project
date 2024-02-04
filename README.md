@@ -6,14 +6,15 @@ Amazon is the world's largest online retailer founded in 1994. Its product manag
 
 To enhance the elements of user experience, I first analyze the current status of each element below.
 
-Recommendations: Amazon mainly uses memory-based collaborative filtering. It requires calculating every time a prediction is made. Also, it does not handle cold-start problems well.
-Search: Amazon's search results are usually extensive and relevant, but for some keywords, the listings tend to repeat.
-Reviews: Each product page has reviews sections. While there is a summary provided for each product, it tends to be generic and not extremely useful for users.
+- Recommendations: Amazon mainly uses memory-based collaborative filtering. It requires calculating every time a prediction is made. Also, it does not handle cold-start problems well.
+- Search: Amazon's search results are usually extensive and relevant, but for some keywords, the listings tend to repeat.
+- Reviews: Each product page has reviews sections. While there is a summary provided for each product, it tends to be generic and not extremely useful for users.
+
 Below is a new proposed plan to improve the elements.
 
-Recommendations: Use model-based collaborative filtering which does not require computation every time.
-Search: Automate generating product categories based on the keywords sellers post, and classify products as those categories to expand search.
-Reviews: Extract key featured sentences among all the reviews.
+- Recommendations: Use model-based collaborative filtering which does not require computation every time.
+- Search: Automate generating product categories based on the keywords sellers post, and classify products as those categories to expand search.
+- Reviews: Extract key featured sentences among all the reviews.
 
 For reference, you can find and play around with the code in Google Colab: https://drive.google.com/file/d/1GXH57NHi1oM4hMAOsGKkajTKnjZnWH41/view?usp=drive_link.
 
