@@ -2,10 +2,18 @@
 <img width="687" alt="image" src="https://github.com/suesuyeonlim/final_project/assets/19903898/da46889a-4f50-48c1-8572-da45b81cae3d">
 
 ## I. Project Overview
-In this project, I aim to show how to build recommendation engine for products, enhance search experience, and capture essence of product reviews that would be useful to customers. Specifically,
-- <ins>Product Recommendation:</ins> I build recommendation engine using three model-based methodologies - Singular Vector Dceomposition ("SVD"), Alternating Least Squares ("ALS"), and neural networks.
-- <ins>Product Search Enhancement:</ins> I show how product search can be enhanced by identifying similar groups of products by using sellers' product keywords through multi-label classifcation neural networks.
-- <ins>Featured Product Reviews:</ins> I extracted featured review sentences that capture common themes of reviews for a product through Term Frequency - Inverse Document Frequency ("TF-IDF").
+Amazon is the world's largest online retailer founded in 1994. Its product managers constantly look for ways to improve user experience. User experience at Amazon consists of the following elements: 1) product recommendations customized for individual users; 2) accurate item search; and 3) reviews useful for their purchase decisions.
+
+To enhance the elements of user experience, I first analyze the current status of each element below.
+
+Recommendations: Amazon mainly uses memory-based collaborative filtering. It requires calculating every time a prediction is made. Also, it does not handle cold-start problems well.
+Search: Amazon's search results are usually extensive and relevant, but for some keywords, the listings tend to repeat.
+Reviews: Each product page has reviews sections. While there is a summary provided for each product, it tends to be generic and not extremely useful for users.
+Below is a new proposed plan to improve the elements.
+
+Recommendations: Use model-based collaborative filtering which does not require computation every time.
+Search: Automate generating product categories based on the keywords sellers post, and classify products as those categories to expand search.
+Reviews: Extract key featured sentences among all the reviews.
 
 For reference, you can find and play around with the code in Google Colab: https://drive.google.com/file/d/1GXH57NHi1oM4hMAOsGKkajTKnjZnWH41/view?usp=drive_link.
 
@@ -74,7 +82,17 @@ Below are the top 5 negative review sentences:
 
 >“I bought this when I had 4 dogs in the house (our two, and two puppies we were fostering), out of 4 dogs NONE of them wanted this!”
 
-## V. Location of Data/Analysis
+## V. Conclusions
+Recommendations: Explore and introduce model-based collaborative filtering.
+Search: Implement the automated process of generating product categories and assignining exising products to them, which can be then used for exapnding the search.
+Reviews: Show featured review sentences as a summary of reviews.
+
+## VI. Future Work
+Recommendations: Explore hybrid approches of model-based and memory-based models to optimize performance.
+Search: Further validate the accuracy of expanded item search.
+Reviews: Try different formulas for pulling keywords to see which extract most useful sentences. Produce an evaluation tool to measure the success.
+
+## VII. Location of Data/Analysis
 - Data: See "Data" folder.
 - Analysis: There are two Jupyter notebooks, "01 Data Preparation.ipnyb" and "02 Main Analyses.ipynb". Unless you are interested in the data processing step, you can directly go to "02 Main Analyses.ipynb". Alternatively, you can also play around with the file [here](https://drive.google.com/file/d/1GXH57NHi1oM4hMAOsGKkajTKnjZnWH41/view?usp=drive_link).
   - "01 Data Preparation.ipynb"
@@ -82,7 +100,7 @@ Below are the top 5 negative review sentences:
   - "02 Main Analyses.ipynb"
     - This notebook contains the three main analyses in product recommendation, search, and reviews. In order to run this notebook, unzip the folder "Data Used for Analysis.zip" in the "Data" folder.
 
-## VI. References
+## VIII. References
 - Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering, R. He, J. McAuley, WWW, 2016
 - Image-based recommendations on styles and substitutes, J. McAuley, C. Targett, J. Shi, A. van den Hengel, SIGIR, 2015
 - Weight Initialization Techniques in Neural Networks, Saurabh Yadav (https://towardsdatascience.com/weight-initialization-techniques-in-neural-networks-26c649eb3b78)
