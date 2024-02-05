@@ -16,7 +16,7 @@ Below is a new proposed plan to improve the elements.
 - Search: Automate generating product categories based on the keywords sellers post, and classify products as those categories to expand search.
 - Reviews: Extract key featured sentences among all the reviews.
 
-For reference, you can find and play around with the code in Google Colab: https://drive.google.com/file/d/1GXH57NHi1oM4hMAOsGKkajTKnjZnWH41/view?usp=drive_link.
+For reference, you can find and play around with the code in Google Colab: [https://drive.google.com/file/d/1GXH57NHi1oM4hMAOsGKkajTKnjZnWH41/view?usp=drive_link](https://colab.research.google.com/drive/12snm2Y3icbe46xWDufxmI15PB9TxADxL).
 
 ## II. Product Recommendation
 In order to build recommendation engine using model-based approaches, I use [Amazon Product Reviews from UCSD](https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews) for years 2001-2018. As seen below, most reviews are concentrated in the 2013-2018 period and the average rating is approximately 4 stars.
