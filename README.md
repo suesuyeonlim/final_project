@@ -105,3 +105,5 @@ Reviews: Try different formulas for pulling keywords to see which extract most u
 - Ups and downs: Modeling the visual evolution of fashion trends with one-class collaborative filtering, R. He, J. McAuley, WWW, 2016
 - Image-based recommendations on styles and substitutes, J. McAuley, C. Targett, J. Shi, A. van den Hengel, SIGIR, 2015
 - Weight Initialization Techniques in Neural Networks, Saurabh Yadav (https://towardsdatascience.com/weight-initialization-techniques-in-neural-networks-26c649eb3b78)
+- Book Recommendation System, Gilbert Tanner (https://www.kaggle.com/code/tannergi/book-recommendation-system)
+- Using Neural Networks for Your Recommender System, Benedikt Schifferer, NVIDIA DEVELOPER (https://developer.nvidia.com/blog/using-neural-networks-for-your-recommender-system/)
