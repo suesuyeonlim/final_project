@@ -84,14 +84,14 @@ Below are the top 5 negative review sentences:
 >“I bought this when I had 4 dogs in the house (our two, and two puppies we were fostering), out of 4 dogs NONE of them wanted this!”
 
 ## V. Conclusions
-Recommendations: Explore and introduce model-based collaborative filtering.
-Search: Implement the automated process of generating product categories and assignining exising products to them, which can be then used for exapnding the search.
-Reviews: Show featured review sentences as a summary of reviews.
+- Recommendations: Explore and introduce model-based collaborative filtering.
+- Search: Implement the automated process of generating product categories and assignining exising products to them, which can be then used for exapnding the search.
+- Reviews: Show featured review sentences as a summary of reviews.
 
 ## VI. Future Work
-Recommendations: Explore hybrid approches of model-based and memory-based models to optimize performance.
-Search: Further validate the accuracy of expanded item search.
-Reviews: Try different formulas for pulling keywords to see which extract most useful sentences. Produce an evaluation tool to measure the success.
+- Recommendations: Explore hybrid approches of model-based and memory-based models to optimize performance.
+- Search: Further validate the accuracy of expanded item search.
+- Reviews: Try different formulas for pulling keywords to see which extract most useful sentences. Produce an evaluation tool to measure the success.
 
 ## VII. Location of Data/Analysis
 - Data: See "Data" folder.
